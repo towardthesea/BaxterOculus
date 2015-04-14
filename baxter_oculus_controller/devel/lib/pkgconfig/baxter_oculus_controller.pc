@@ -1,0 +1,8 @@
+prefix=/home/ros/ros-baxter/src/baxter_oculus_controller/devel
+
+Name: baxter_oculus_controller
+Description: Description of baxter_oculus_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ros/ros-baxter/src/baxter_oculus_controller/devel/lib 
+Requires: 

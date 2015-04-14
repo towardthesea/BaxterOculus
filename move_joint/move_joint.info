@@ -1,0 +1,41 @@
+This project defines a node that can be used to move a given joint of the
+Baxter robot using the keyboard.
+
+Parameters are used to define:
+------------------------------
+° The joint to be moved.
+° The up and down keys (there are default values)
+° The increment applied at each key press (there is a default value).
+
+As a lab subject, it is used to teach the following:
+----------------------------------------------------
+° Use of the parameter server with parameters local to nodes.
+° Parameter setting in launch files.
+° Topic remapping in launch files.
+° Good topic naming practices.
+° Nodes running on different computers.
+
+The task of each lab group:
+---------------------------
+° Program key capture and publishing node (see capture_key package).
+° Program the joint control program.
+° Define a launch file starting one capture_key node and one move_joint node
+  for a given Baxter joint and up/down keys. Each group will be assigned 
+  a different joint.
+° Execute all nodes together to move the two arms of the robot.
+  (The more advanced groups will be assigned two robot joints, hence they will
+  have to start two capture_key nodes with different joint/up/down settings).
+  
+Technicalities to be careful about:
+-----------------------------------
+° There is no standard message for characters. Hence, the capture_key node   
+  will pusblish integers. Using char generates nasty errors, which are
+  difficult to analyze.
+° Make sure the students print the parameters in the initialization phase,
+  to make sure everything is OK.
+° Beware of default parameter values. If you launch a node with non default
+  parameters, then stop it and restart it with the intention to use the 
+  default parameters, it will not work: the parameters are still in the 
+  parameter server. In that case, you must first get rid of them. You can do
+  that in two ways: rosparam delete /my_node or use clear_params="true" in 
+  the <node pkg= ...> line.

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/towardthesea/catkin_ws/src/move_joint/devel/setup.sh

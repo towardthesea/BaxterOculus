@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "move_joint")
+set(move_joint_MAINTAINER "towardthesea <ph17dn@gmail.com>")
+set(move_joint_DEPRECATED "")
+set(move_joint_VERSION "0.0.0")
+set(move_joint_BUILD_DEPENDS "roscpp" "std_msgs" "sensor_msgs" "baxter_core_msgs" "moveit_ros_planning_interface" "cmake_modules" "moveit_msgs")
+set(move_joint_RUN_DEPENDS "moveit_msgs" "cmake_modules" "roscpp" "std_msgs" "sensor_msgs" "baxter_core_msgs" "moveit_ros_planning_interface")
+set(move_joint_BUILDTOOL_DEPENDS "catkin")

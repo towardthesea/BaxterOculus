@@ -1,0 +1,8 @@
+prefix=/home/ros/ros-baxter/src/moveit_baxter_test/devel
+
+Name: moveit_baxter_test
+Description: Description of moveit_baxter_test
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ros/ros-baxter/src/moveit_baxter_test/devel/lib 
+Requires: 

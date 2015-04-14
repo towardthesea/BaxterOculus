@@ -1,0 +1,109 @@
+#include <ros/ros.h>
+#include <tf/transform_listener.h>
+#include <tf/transform_broadcaster.h>
+//#include <eigen3/Eigen/Core>
+//#include <eigen3/Eigen/Dense>
+#include <sensor_msgs/JointState.h>
+#include <geometry_msgs/PoseStamped.h>
+#include <geometry_msgs/Pose.h>
+#include <baxter_core_msgs/JointCommand.h>
+
+#include <iostream>
+
+using namespace std ;
+using namespace Eigen ;
+
+//needed messages
+geometry_msgs::Pose oculusPose;
+geometry_msgs::Pose desiredPose;
+geometry_msgs::Pose initialPose;
+
+bool messageRecieved = false;
+
+
+// Callblacks
+
+void poseCall(geometry_msgs::Pose Pose){
+
+    oculusPose = Pose;
+    messageRecieved = true;
+
+}
+
+//Functions
+
+void calibration(){
+
+    ROS_INFO("Starting Calibration, please wait");
+
+    // Put the robot in the initial condition //
+
+        // use moveit here to send the robot arm in the initial condition //
+        // position: x = 0.58289 ; y = -0.58289 ; z = 0.411985 orientation:
+        //*****CODE HERE ********//
+
+    ROS_INFO("End of calibration phase, control loop is starting. Have Fun!!");
+
+}
+
+int main(int argc, char** argv){
+
+    //init
+    ros::init(argc, argv, "control");
+    ros::NodeHandle nh;
+
+    //publisher / Subscibers
+
+    ros::Subscriber subOculus = nh.subscribe("/delta_pose",1,poseCall);
+
+    //needed objects
+
+
+    tf::Quaternion rotQdesired,rotQinitial,rotQoculus;
+
+
+    //Initial calibration
+
+    calibration();
+
+    ros::Rate rate(50);
+
+
+    while(ros::ok()){
+
+        ros::spinOnce() ;
+
+        if(!messageRecieved) {
+
+            ROS_INFO("Waiting for the message");
+
+        }
+        else{
+
+            //Get the Oculus rotation
+
+            rotQoculus = oculusPose.orientation;
+
+            //calculate desired pose
+
+            rotQdesired = rotQinitial*=rotQoculus;
+            desiredPose.orientation = rotQdesired;
+            desiredPose.position = initialPose.position;
+
+            // send everything to moveIt !!!!! //
+
+
+
+
+        }
+
+        rate.sleep() ;
+
+        messageRecieved = false; //reset message flag
+    }
+
+
+    return 0;
+
+
+}

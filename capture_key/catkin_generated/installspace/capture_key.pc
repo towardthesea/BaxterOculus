@@ -1,0 +1,8 @@
+prefix=/home/towardthesea/catkin_ws/install
+
+Name: capture_key
+Description: Description of capture_key
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/towardthesea/catkin_ws/install/lib 
+Requires: 

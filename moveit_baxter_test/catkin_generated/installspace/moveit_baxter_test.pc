@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: moveit_baxter_test
+Description: Description of moveit_baxter_test
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

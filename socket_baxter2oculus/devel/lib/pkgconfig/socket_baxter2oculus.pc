@@ -1,0 +1,8 @@
+prefix=/home/ros/ros-baxter/src/socket_baxter2oculus/devel
+
+Name: socket_baxter2oculus
+Description: Description of socket_baxter2oculus
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ros/ros-baxter/src/socket_baxter2oculus/devel/lib 
+Requires: 

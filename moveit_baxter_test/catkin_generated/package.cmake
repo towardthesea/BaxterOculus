@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "moveit_baxter_test")
+set(moveit_baxter_test_MAINTAINER "towardthesea <ph17dn@gmail.com>")
+set(moveit_baxter_test_DEPRECATED "")
+set(moveit_baxter_test_VERSION "0.0.0")
+set(moveit_baxter_test_BUILD_DEPENDS "roscpp" "std_msgs" "sensor_msgs" "baxter_core_msgs" "moveit_ros_planning_interface" "cmake_modules" "moveit_msgs")
+set(moveit_baxter_test_RUN_DEPENDS "moveit_msgs" "cmake_modules" "roscpp" "std_msgs" "sensor_msgs" "baxter_core_msgs" "moveit_ros_planning_interface")
+set(moveit_baxter_test_BUILDTOOL_DEPENDS "catkin")

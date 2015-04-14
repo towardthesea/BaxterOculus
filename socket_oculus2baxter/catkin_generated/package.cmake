@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "socket_oculus2baxter")
+set(socket_oculus2baxter_MAINTAINER "towardthesea <ph17dn@gmail.com>")
+set(socket_oculus2baxter_DEPRECATED "")
+set(socket_oculus2baxter_VERSION "0.0.0")
+set(socket_oculus2baxter_BUILD_DEPENDS "roscpp" "std_msgs" "sensor_msgs" "baxter_core_msgs" "cmake_modules")
+set(socket_oculus2baxter_RUN_DEPENDS "cmake_modules" "roscpp" "std_msgs" "sensor_msgs" "baxter_core_msgs")
+set(socket_oculus2baxter_BUILDTOOL_DEPENDS "catkin")

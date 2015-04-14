@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ros/ros-baxter/src/socket_oculus2baxter/devel/setup.sh

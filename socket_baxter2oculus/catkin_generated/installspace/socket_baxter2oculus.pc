@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: socket_baxter2oculus
+Description: Description of socket_baxter2oculus
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

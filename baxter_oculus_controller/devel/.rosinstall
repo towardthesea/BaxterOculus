@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ros/ros-baxter/src/baxter_oculus_controller/devel/setup.sh

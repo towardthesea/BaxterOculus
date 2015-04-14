@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "baxter_oculus_controller")
+set(baxter_oculus_controller_MAINTAINER "towardthesea <ph17dn@gmail.com>")
+set(baxter_oculus_controller_DEPRECATED "")
+set(baxter_oculus_controller_VERSION "0.0.0")
+set(baxter_oculus_controller_BUILD_DEPENDS "roscpp" "std_msgs" "sensor_msgs" "baxter_core_msgs" "moveit_ros_planning_interface" "cmake_modules" "moveit_msgs" "tf")
+set(baxter_oculus_controller_RUN_DEPENDS "moveit_msgs" "cmake_modules" "roscpp" "std_msgs" "sensor_msgs" "baxter_core_msgs" "moveit_ros_planning_interface" "tf")
+set(baxter_oculus_controller_BUILDTOOL_DEPENDS "catkin")

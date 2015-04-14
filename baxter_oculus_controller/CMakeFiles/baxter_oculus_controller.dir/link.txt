@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -g   -shared -Wl,-soname,libbaxter_oculus_controller.so -o devel/lib/libbaxter_oculus_controller.so CMakeFiles/baxter_oculus_controller.dir/src/moveit_baxter.cpp.o -L/home/ros/ros-baxter/devel/include -L/opt/ros/hydro/include -L/usr/include -L/usr/include/eigen3 -L/usr/include/pcl-1.7 -L/home/ros/ros-baxter/src/baxter_oculus_controller 

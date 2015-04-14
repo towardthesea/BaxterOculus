@@ -1,0 +1,8 @@
+prefix=/home/towardthesea/catkin_ws/src/move_joint/devel
+
+Name: move_joint
+Description: Description of move_joint
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/towardthesea/catkin_ws/src/move_joint/devel/lib 
+Requires: 

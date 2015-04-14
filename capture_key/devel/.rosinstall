@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/towardthesea/catkin_ws/src/capture_key/devel/setup.sh
